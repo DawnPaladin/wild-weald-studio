@@ -124,9 +124,19 @@ a {
 	justify-content: center;
 	align-items: center;
 }
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
 .flex-col {
 	display: flex;
 	flex-direction: column;
+}
+.gap-1 {
+	gap: 1em;
+}
+.gap-2 {
+	gap: 2em;
 }
 .text-lg {
 	font-size: 1.2em;
