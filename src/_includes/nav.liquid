@@ -22,6 +22,7 @@
 		color: var(--color-earth);
 		text-decoration: none;
 		padding: .5em;
+		text-wrap: nowrap;
 	}
 
 	nav a:hover {
@@ -50,13 +51,14 @@
 <nav>
 	<ul>
 		<li><a href="/"><span style="margin-right: -.125em">H</span>ome</a></li>
+		<li><a href="/about"><span style="margin-right: -.1em">A</span>bout</a></li>
 		<li><a href="/gallery">Gallery</a></li>
 		<li><a href="/events"><span style="margin-right: -.05em">E</span>vents</a></li>
 		<li><a href="/inquiries">Inquiries</a></li>
 		<li><a href="https://forms.gle/pQVYGVyAhSPkXirj8" target="_blank">
 			<span style="margin-right: -.1em">N</span>ewsletter
-			<img alt="External link" src="/img/lucide--external-link.svg" class="h-half">
+			<img alt="External link" src="/img/lucide--external-link.svg" class="h-half" eleventy:ignore>
 		</a></li>
-		<li><a href="https://www.etsy.com/shop/WildWealdStudio" target="_blank">Shop <img alt="External link" src="/img/lucide--external-link.svg" class="h-half"></a></li>
+		<li><a href="https://www.etsy.com/shop/WildWealdStudio" target="_blank">Shop <img alt="External link" src="/img/lucide--external-link.svg" class="h-half" eleventy:ignore></a></li>
 	</ul>
 </nav>
