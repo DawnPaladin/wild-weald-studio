@@ -114,6 +114,9 @@ main {
 		height: auto;
 	}
 }
+a {
+	color: var(--color-chartreuse);
+}
 .center-xy {
 	width: 100%;
 	height: 100%;
