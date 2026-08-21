@@ -1,6 +1,8 @@
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import { galleryShortcode, galleryImageShortcode } from './gallery.js';
 
 export default async function(eleventyConfig) {
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 	// Gallery
     eleventyConfig.addPairedShortcode("gallery", galleryShortcode);
 	eleventyConfig.addShortcode("galleryImg", galleryImageShortcode);

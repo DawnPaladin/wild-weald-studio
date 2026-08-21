@@ -1,12 +1,6 @@
 ---
-layout: layouts/page.liquid
+layout: layouts/md.liquid
 ---
-
-<style>
-main {
-    padding: 2em;
-}
-</style>
 
 # Come Find Me in the Wild!
 I have a busy fall schedule this year, and I hope we can cross paths!
