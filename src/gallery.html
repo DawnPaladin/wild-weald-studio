@@ -16,6 +16,9 @@ layout: layouts/page.liquid
         font-size: 2.25rem;
         margin-top: 0;
         margin-bottom: 1rem;
+        @media (width <=768px) {
+            margin-top: 1rem;
+        }
     }
     p {
         font-size: 1.3em;
@@ -24,11 +27,30 @@ layout: layouts/page.liquid
     figure {
         margin: 1em 0;
         align-items: flex-start;
+        display: flex;
+        @media (width >768px) {
+            flex-direction: row;
+        }
+        @media (width <=768px) {
+            flex-direction: column;
+            padding-bottom: 1em;
+            margin-bottom: 2em;
+            border-bottom: 1px solid gray;
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
     }
     figure picture {
         display: block;
         flex-shrink: 0;
-        max-width: 50%;
+        @media (width >768px) {
+            max-width: 50%;
+            margin-right: 1em;
+        }
+        @media (width <=768px) {
+            max-width: 100%;
+        }
     }
     figure img {
         display: block;
@@ -46,7 +68,7 @@ layout: layouts/page.liquid
 
 <p>Available at shows this autumn and by commission. <a href="http://localhost:8080/inquiries">Get in touch.</a></p>
 
-<figure class="flex-row gap-2">
+<figure>
     <img src="img/Galleries/Komorebi/ginkgocirclet1.jpg" alt="" width="400"/>
     <figcaption>
         <h2>Ginkgo Circlet I</h2>
@@ -54,7 +76,7 @@ layout: layouts/page.liquid
     </figcaption>
 </figure>
 
-<figure class="flex-row gap-2">
+<figure>
     <img src="img/Galleries/Komorebi/cascade1.jpg" alt="" width="400"/>
     <figcaption>
         <h2>Ginkgo Cascade I</h2>
@@ -62,7 +84,7 @@ layout: layouts/page.liquid
     </figcaption>
 </figure>
 
-<figure class="flex-row gap-2">
+<figure>
     <img src="img/Galleries/Komorebi/cascade2.jpg" alt="" width="400"/>
     <figcaption>
         <h2>Ginkgo Cascade II</h2>
@@ -70,7 +92,7 @@ layout: layouts/page.liquid
     </figcaption>
 </figure>
 
-<figure class="flex-row gap-2">
+<figure>
     <img src="img/Galleries/Komorebi/cascade3.jpg" alt="" width="400"/>
     <figcaption>
         <h2>Ginkgo Cascade III</h2>
@@ -78,7 +100,7 @@ layout: layouts/page.liquid
     </figcaption>
 </figure>
 
-<figure class="flex-row gap-2">
+<figure>
     <img src="img/Galleries/Komorebi/sycamore1.jpg" alt="" width="400"/>
     <figcaption>
         <h2>Sycamore Leaves I</h2>
@@ -86,7 +108,7 @@ layout: layouts/page.liquid
     </figcaption>
 </figure>
 
-<figure class="flex-row gap-2">
+<figure>
     <img src="img/Galleries/Komorebi/leaf1.jpg" alt="" width="400"/>
     <figcaption>
         <h2>Individual Gingko Leaves</h2>
