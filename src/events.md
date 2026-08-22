@@ -1,5 +1,5 @@
 ---
-layout: layouts/md.liquid
+layout: layouts/standard.liquid
 ---
 
 # Come Find Me in the Wild!

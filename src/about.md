@@ -1,5 +1,5 @@
 ---
-layout: layouts/md.liquid
+layout: layouts/standard.liquid
 ---
 
 <img src="/img/zephyrintheglow.jpg" alt="" width="800">
