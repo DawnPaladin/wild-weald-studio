@@ -2,19 +2,44 @@
 layout: layouts/standard.liquid
 ---
 
+<style>
+    .four-square {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .four-square a {
+        display: block;
+    }
+    .thumb {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media (min-width: 769px) {
+        .four-square {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: min(100%, calc(100vh - 10em));
+            aspect-ratio: 1 / 1;
+        }
+    }
+</style>
+
 <h1>Gallery</h1>
 
-<div>
+<div class="four-square">
     <a href="/gallery/komorebi">
-        <img src="/img/Galleries/komorebithumb.jpg" alt="Komorebi" width="400" />
+        <img src="/img/Galleries/komorebithumb.jpg" alt="Komorebi" class="thumb" />
     </a>
     <a href="/gallery/linger-and-rise">
-        <img src="/img/Galleries/landrthumb.jpg" alt="Linger and Rise" width="400" />
+        <img src="/img/Galleries/landrthumb.jpg" alt="Linger and Rise" class="thumb" />
     </a>
     <a href="/gallery/threadcraft">
-        <img src="/img/Galleries/threadcraftthumb.jpg" alt="Threadcraft" width="400" />
+        <img src="/img/Galleries/threadcraftthumb.jpg" alt="Threadcraft" class="thumb" />
     </a>
     <a href="/gallery/commisions">
-        <img src="/img/Galleries/commissionsthumb.jpg" alt="Commissions" width="400" />
+        <img src="/img/Galleries/commissionsthumb.jpg" alt="Commissions" class="thumb" />
     </a>
 </div>
