@@ -4,6 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/style.css">
+	<script type="speculationrules">
+	{
+		"prerender": [{
+			"where": { "href_matches": "/*" },
+			"eagerness": "moderate"
+		}]
+	}
+	</script>
+	<script>
+		// Prefetch content in browsers that don't natively support the Speculation Rules API (Firefox, Safari)
+		(function () {
+			var nativeSupport = !!(window.HTMLScriptElement && HTMLScriptElement.supports && HTMLScriptElement.supports('speculationrules'));
+			if (nativeSupport) return;
+			var prefetched = new Set();
+			function onHover(e) {
+				var a = e.target.closest && e.target.closest('a[href^="/"]');
+				if (!a || prefetched.has(a.href)) return;
+				prefetched.add(a.href);
+				var link = document.createElement('link');
+				link.rel = 'prefetch';
+				link.href = a.href;
+				document.head.appendChild(link);
+			}
+			document.addEventListener('mouseover', onHover);
+			document.addEventListener('touchstart', onHover, { passive: true });
+		})();
+	</script>
 </head>
 
 <body>
