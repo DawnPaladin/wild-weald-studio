@@ -52,12 +52,17 @@ layout: layouts/bare.liquid
 	@media (max-width: 768px) {
 		.main-wrapper {
 			width: 100%;
-			height: 100%;
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			min-height: 0;
 			overflow: hidden;
 		}
 		.hero {
 			width: 100%;
-			height: 100%;
+			height: auto;
+			flex: 1;
+			min-height: 0;
 			object-fit: cover;
 			object-position: right center;
 		}
