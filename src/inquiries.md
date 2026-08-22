@@ -21,6 +21,8 @@ layout: layouts/standard.liquid
     <img src="/img/Galleries/Commissions/bluebirdcirclet1.jpg" alt="" width="300" />
 </div>
 
+# Inquiries
+
 My email address is:
 
 <a class="text-lg" href="mailto:holly@wildwealdstudio.com">holly@wildwealdstudio.com</a>
