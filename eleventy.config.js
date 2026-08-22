@@ -1,11 +1,13 @@
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import { galleryShortcode, galleryImageShortcode } from './gallery.js';
+import { heroImageShortcode } from './hero-image.js';
 
 export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 	// Gallery
     eleventyConfig.addPairedShortcode("gallery", galleryShortcode);
 	eleventyConfig.addShortcode("galleryImg", galleryImageShortcode);
+	eleventyConfig.addShortcode("heroImg", heroImageShortcode);
 	eleventyConfig.addPassthroughCopy("src/css");
 	eleventyConfig.addPassthroughCopy("src/img");
 	eleventyConfig.addPassthroughCopy("src/fonts");

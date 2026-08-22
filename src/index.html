@@ -13,6 +13,9 @@ layout: layouts/bare.liquid
 		width: min(100%, calc(100vh * 2480 / 1857));
 		container-type: inline-size;
 	}
+	.main-wrapper picture {
+		display: contents;
+	}
 	.hero {
 		width: 100%;
 		height: auto;
@@ -84,5 +87,5 @@ layout: layouts/bare.liquid
 			in Durham, North Carolina
 		</p>
 	</div>
-	<img src="/img/home-bg.jpg" alt="Holly Harris crafting glass in her workshop" class="hero"/>
+	{% heroImg "img/home-bg.jpg", "Holly Harris crafting glass in her workshop", "hero" %}
 </div>
