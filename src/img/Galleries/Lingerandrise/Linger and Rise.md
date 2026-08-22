@@ -1,6 +1,6 @@
 # Series Description
 
-My current body of work, _Linger and Rise_, pairs intricate betta fish panels with petite hexagonal suncatchers, each bearing affirmations burned into hand-milled wood frames. Each composition is an affirmative response to a question I have lived: Can I survive this day? Is it okay to be afraid? Am I enough?
+_Linger and Rise_ pairs intricate betta fish panels with petite hexagonal suncatchers, each bearing affirmations burned into hand-milled wood frames. Each composition is an affirmative response to a question I have lived: Can I survive this day? Is it okay to be afraid? Am I enough?
 
 A medium both fragile and flowing, stained glass feels appropriate to hold the shapes of emotional recovery after trauma—broken shards of vibrant glass recombined into something new and beautiful, offering what truths I am able to reach toward. Each piece is fashioned, not just from glass and solder and light, but from the experience of seeking wholeness for myself after seasons of trauma, grief, and bitter silence. This work is my way of making my hard-won truths tangible. Like stained glass transforms sunlight into vibrant color, I am learning to let hope pass through the fractured parts of me to become something beautiful.
 
