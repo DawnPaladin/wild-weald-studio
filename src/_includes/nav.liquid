@@ -9,7 +9,7 @@
 		list-style-type: none;
 		gap: 2rem;
 		text-align: right;
-		margin-top: 0;
+		margin: 0;
 		padding-right: 1em;
 		height: 100%;
 	}
@@ -31,6 +31,14 @@
 
 	nav a::first-letter {
 		font-family: "Flora", sans-serif;
+	}
+	@media (min-width: 769px) {
+		nav {
+			position: sticky;
+			top: 0;
+			height: 100vh;
+			overflow-y: auto;
+		}
 	}
 	@media (max-width: 768px) {
 		nav ul {
